@@ -28,4 +28,55 @@ body {
   height: 320px;
   background-color: silver;
   border-radius: 25px;
+  flex-direction: column;
+}
+
+.iid-card__main-data-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.iid-main-data-wrapper__text{
+  color: #040404;
+  font-family: 'Inter';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 3px 0px;
+  
+}
+
+.iid-card___pfp {
+  width: 128px;
+  height: 128px;
+  border-radius: 16px;
+  background:url('./assets/images/default.png');
+
+  margin: 29px 29px 14px 29px;
+}
+
+.iid-main-data-wrapper__data-rect {
+  display: flex;
+  margin-top: 29px;
+  margin-bottom: 14px;
+  margin-right: 29px;
+
+  border-radius: 16px;
+  background: #808080; 
+  flex-direction: column;
+  padding: 16px;
+  width: 52%;
+}
+
+.iid-card-data-rect {
+  display: flex;
+  margin-bottom: 14px;
+  margin-right: 29px;
+  margin-left: 29px;
+
+
+  border-radius: 16px;
+  background: #808080; 
+  flex-direction: column;
+  padding: 16px;
 }

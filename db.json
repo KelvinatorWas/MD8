@@ -9,19 +9,19 @@
       "origin": "Earth",
       "pfp": "john_doe",
       "birth_year": "2350",
-      "alive": true,
+      "status": "In Critical Condition!",
       "desc": "None Included"
     },
     {
       "id": 2,
-      "name": "John Doe",
+      "name": "Jane Doe",
       "species": "Human",
-      "sex": "Male",
-      "occupation": "Captin",
-      "origin": "Earth",
-      "pfp": "john_doe",
+      "sex": "Female",
+      "occupation": "Pirate",
+      "origin": "Mars",
+      "pfp": "jane_doe",
       "birth_year": "2350",
-      "alive": true,
+      "status": "Is Alive",
       "desc": "None Included"
     },
     {
@@ -33,7 +33,7 @@
       "origin": "Earth",
       "pfp": "john_doe",
       "birth_year": "2350",
-      "alive": true,
+      "status": "Is Alive",
       "desc": "None Included"
     }
   ]
