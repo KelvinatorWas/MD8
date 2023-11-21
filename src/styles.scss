@@ -1,3 +1,31 @@
 body {
-  background-color: antiquewhite;
+  background-color: white;
+  margin: 0px;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.id-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr; 
+  row-gap: 16px;
+  column-gap: 16px;
+  width: auto;
+  height: auto;
+  background-color: darkslategrey;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.iid-card {
+  display: flex;
+  justify-self: center;
+  width: 520px;
+  height: 320px;
+  background-color: silver;
+  border-radius: 25px;
 }

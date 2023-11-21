@@ -1,9 +1,40 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "IID": [
+    {
+      "id": 0,
+      "name": "John Doe",
+      "species": "Human",
+      "sex": "Male",
+      "occupation": "Captin",
+      "origin": "Earth",
+      "pfp": "john_doe",
+      "birth_year": "2350",
+      "alive": true,
+      "desc": "None Included"
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "species": "Human",
+      "sex": "Male",
+      "occupation": "Captin",
+      "origin": "Earth",
+      "pfp": "john_doe",
+      "birth_year": "2350",
+      "alive": true,
+      "desc": "None Included"
+    },
+    {
+      "id": 3,
+      "name": "John Doe",
+      "species": "Human",
+      "sex": "Male",
+      "occupation": "Captin",
+      "origin": "Earth",
+      "pfp": "john_doe",
+      "birth_year": "2350",
+      "alive": true,
+      "desc": "None Included"
+    }
+  ]
 }
