@@ -1,28 +1,17 @@
 {
   "IID": [
     {
-      "id": 0,
-      "name": "John Doe",
-      "species": "Human",
-      "sex": "Male",
-      "occupation": "Captin",
-      "origin": "Earth",
-      "pfp": "john_doe",
-      "birth_year": "2350",
-      "status": "In Critical Condition!",
-      "desc": "None Included"
-    },
-    {
       "id": 2,
-      "name": "Jane Doe",
-      "species": "Human",
+      "name": "Jane  Doe",
+      "species": "2350 Mars's Years",
       "sex": "Female",
       "occupation": "Pirate",
       "origin": "Mars",
       "pfp": "jane_doe",
       "birth_year": "2350",
-      "status": "Is Alive",
-      "desc": "None Included"
+      "status": "Is in hiding!",
+      "desc": "None Included",
+      "createdAt": "2023-11-23T13:55:23.344Z"
     },
     {
       "id": 3,
@@ -34,7 +23,34 @@
       "pfp": "john_doe",
       "birth_year": "2350",
       "status": "Is Alive",
-      "desc": "None Included"
+      "desc": "None Included",
+      "createdAt": "2023-11-23T13:55:23.344Z"
+    },
+    {
+      "id": 4,
+      "name": "John McLarge",
+      "species": "Human",
+      "sex": "Male",
+      "occupation": "Unknown",
+      "origin": "Earth",
+      "pfp": "",
+      "birth_year": "2360",
+      "status": "Is off planet, destination unknown!",
+      "desc": "Carefull",
+      "createdAt": "2023-11-23T13:55:23.344Z"
+    },
+    {
+      "id": 6,
+      "name": "Gatto",
+      "species": "Cat",
+      "sex": "Male",
+      "occupation": "Being Cute",
+      "origin": "Earth",
+      "pfp": "cat",
+      "birth_year": "2020",
+      "status": "Is eepy.",
+      "desc": "",
+      "createdAt": "2023-11-23T14:15:24.450Z"
     }
   ]
 }

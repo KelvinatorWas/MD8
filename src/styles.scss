@@ -5,9 +5,13 @@ body {
 
 .center-wrapper {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.test {
+  display: flex;
   justify-content: center;
 }
-
 .id-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -19,6 +23,23 @@ body {
   background-color: darkslategrey;
   padding: 32px;
   border-radius: 16px;
+}
+
+.iid-card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iid-ud-rect {
+  display: flex;
+  width: 50%;
+  height: 32px;
+  border-radius: 0px 0px 16px 16px;
+  justify-content: center;
+  background-color: gray;
+
+  padding: 4px;
 }
 
 .iid-card {
@@ -43,7 +64,6 @@ body {
   font-style: normal;
   font-weight: 400;
   margin: 3px 0px;
-  
 }
 
 .iid-card___pfp {
@@ -51,6 +71,7 @@ body {
   height: 128px;
   border-radius: 16px;
   background:url('./assets/images/default.png');
+  background-size: 100%;
 
   margin: 29px 29px 14px 29px;
 }
@@ -79,4 +100,65 @@ body {
   background: #808080; 
   flex-direction: column;
   padding: 16px;
+}
+
+
+.text-box {
+  display: flex;
+  flex-direction:row;
+}
+
+.text-box__type, .iid-input-text, .text-box__text {
+  color: #040404;
+  font-family: 'Inter';
+  font-size: 12px;
+  font-style: bold;
+  font-weight: 600;
+  margin: 3px 0px;
+  margin-right: 3px;
+}
+
+.text-box__text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.iid-input-box {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: gray;
+  border-radius: 0 0 16px 16px;
+}
+.text-box__input {
+  background-color: silver;
+}
+.submit-button {
+  margin-top: 11px;
+  padding: 8px;
+  background-color: silver;
+  border-radius: 8px;
+
+  color: #040404;
+  font-family: 'Inter';
+  font-size: 12px;
+  font-style: bold;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete-button, .edit-button {
+  cursor: pointer;
+}
+
+.iid-card-created-at {
+  color: gray;
+  font-family: 'Inter';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 3px 0px;
+  margin-right: 32px;
+  align-self: flex-end;
 }
