@@ -85,14 +85,14 @@ const createSpecialTextElement = (parent: HTMLElement, dataTypeText = '', text =
 
 class IDCardManager {
   private idWrapper: HTMLElement | null;
-  private centerWrapper: HTMLElement | null;
 
   constructor() {
     this.idWrapper = document.querySelector('.id-wrapper');
-    this.centerWrapper = document.querySelector('.center-wrapper');
   }
 
   private createCardMainData(idCard: HTMLElement, data: IID): void {
+    // Create Card Elements
+
     const mainDataWrapper = createElement(undefined, 'iid-card__main-data-wrapper');
     const pfp = createElement(undefined, 'iid-card___pfp');
     const dataRect = createElement('div', 'iid-main-data-wrapper__data-rect');
@@ -111,8 +111,9 @@ class IDCardManager {
     createSpecialTextElement(bottomCardDataRect, 'Birth Year:', `${data.birth_year} ${data.origin}'s Years`, 'species', data.id);
     createSpecialTextElement(bottomCardDataRect, 'Status:', `${data.status}`, 'status', data.id);
 
-    const imageExtensions = ['png', 'jpg', 'jpeg'] as const;
+    // Check what type of image extension
 
+    const imageExtensions = ['png', 'jpg', 'jpeg'] as const;
     const fallBackImage = (index = 0) => {
       if (index >= imageExtensions.length) {
         pfp.style.background = 'url("./assets/images/default.png")';
@@ -133,16 +134,23 @@ class IDCardManager {
       };
     };
 
+    // Call the image extension check
+
     fallBackImage();
 
     // Add the Data to the IdCard
+
     appendChildern(mainDataWrapper, pfp, dataRect);
+
+    // Create a Element that shows Created At: 2 days ago.
 
     const createdAtElement = createElement('div', 'iid-card-created-at');
     const createdAtDate = new Date(data.createdAt);
 
     const dist = formatDistanceToNow(createdAtDate, { addSuffix: true });
     if (dist) createdAtElement.textContent = `Created At: ${dist}`;
+
+    // Add all the Elements to the card!
 
     appendChildern(idCard, mainDataWrapper, bottomCardDataRect, createdAtElement);
   }
