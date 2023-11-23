@@ -229,6 +229,7 @@ class IDCardManager {
 
   private addId(): void {
     // Get the form element
+
     const inputForm = document.getElementById('iidForm') as HTMLFormElement;
 
     const time = new Date().toISOString();
@@ -250,7 +251,9 @@ class IDCardManager {
     const data:newIID = { ...newId };
     axios.post('http://localhost:3004/IID', data).then((response) => {
       newId.id = response.data.id;
+
       // Create and append the new ID card
+
       const idCardBox = createElement(undefined, 'iid-card-box');
       const idCard = createElement(undefined, 'iid-card', 'js-card-wrapper');
       this.createCardMainData(idCard, newId);
